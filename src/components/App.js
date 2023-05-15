@@ -5,7 +5,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
-import { currentUserContext } from "../contexts/CurrentUserContext.js";
+import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 import api from "../utils/Api";
 import EditProfilePopup from "./EditProfilePopup";
 import EditAvatarPopup from "./EditAvatarPopup";
@@ -236,7 +236,7 @@ function App() {
 
   return (
     <div className="page">
-      <currentUserContext.Provider value={currentUser}>
+      <CurrentUserContext.Provider value={currentUser}>
         <InfoTooltip
           isOpen={isInfoTooltipOpen}
           onClose={closeAllPopups}
@@ -314,7 +314,7 @@ function App() {
         />
         <ImagePopup card={selectedCard} onClose={closeAllPopups} />
         <Footer />
-      </currentUserContext.Provider>
+      </CurrentUserContext.Provider>
     </div>
   );
 }

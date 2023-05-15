@@ -19,8 +19,8 @@ function Login({ loginUser }) {
     loginUser(form);
   }
   return (
-    <div className="screen screen_login " onSubmit={handleSubmit}>
-      <form className="screen-form screen-form_login">
+    <div className="screen screen_login" >
+      <form className="screen-form screen-form_login" onSubmit={handleSubmit}>
         <h2 className="screen-form__title screen-form__title_login">Вход</h2>
         <input
           className="screen-form__input screen-form__input_email"

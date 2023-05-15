@@ -1,7 +1,7 @@
 import vector from "../Images/Vector.png";
 import React from "react";
 import Card from "./Card";
-import { currentUserContext } from "../contexts/CurrentUserContext";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 function Main({
   onEditProfile,
@@ -12,7 +12,7 @@ function Main({
   onCardLike,
   onCardDelete,
 }) {
-  const currentUser = React.useContext(currentUserContext);
+  const currentUser = React.useContext(CurrentUserContext);
   return (
     <main className="content">
       <section className="profile">

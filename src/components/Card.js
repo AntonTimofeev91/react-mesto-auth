@@ -1,6 +1,6 @@
 import trash from "../Images/Trash.svg";
 import React from "react";
-import { currentUserContext } from "../contexts/CurrentUserContext";
+import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
 function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   function handleClick() {
@@ -12,7 +12,7 @@ function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   function handleDeleteClick() {
     onCardDelete(card);
   }
-  const currentUser = React.useContext(currentUserContext);
+  const currentUser = React.useContext(CurrentUserContext);
   const isOwn = card.owner._id === currentUser._id;
   const isLiked = card.likes.some((i) => i._id === currentUser._id);
 

@@ -21,8 +21,8 @@ function Register({ registerUser }) {
     registerUser(form);
   }
   return (
-    <div className="screen screen_register" onSubmit={handleSubmit}>
-      <form className="screen-form screen-form_register">
+    <div className="screen screen_register" >
+      <form className="screen-form screen-form_register" onSubmit={handleSubmit} >
         <h2 className="screen-form__title screen-form__title_register">
           Регистрация
         </h2>

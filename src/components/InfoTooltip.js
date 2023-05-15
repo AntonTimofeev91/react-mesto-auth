@@ -17,7 +17,7 @@ function InfoTooltip({ isOpen, onClose, isSuccess }) {
           type="button"
           onClick={onClose}
         ></button>
-        <img className="popup__info-img" src={massageImg} />
+        <img className="popup__info-img" src={massageImg} alt="Красный крестик ошибки" />
         <h2 className="popup__info-title">{massageText}</h2>
       </div>
     </div>
