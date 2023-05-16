@@ -5,9 +5,9 @@
   margin: 0 auto;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   background-color: #000;
-  color: white;
-  -webkit-font-smoothing: antialiased;
+  background-color: #000;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
